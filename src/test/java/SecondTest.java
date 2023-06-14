@@ -37,11 +37,11 @@ public class SecondTest extends BaseClass {
     public void scrollingDownToTheElement(){
         Util.scrollToElementVisibilityOf (driver, coachesButton);
         driver.findElement (coachesButton).click ();
-        List<String> namesList = new ArrayList<> ();
+        List<WebElement> namesList = new ArrayList<> ();
         for (WebElement element : driver.findElements (coachList)) {
-            namesList.add (element.findElement (names).getText ());
+//            namesList.add (element.findElement (names).getText ());
+        System.out.println(element.findElement (names).getText ());
         }
-        System.out.print(namesList);
     }
 
     @AfterClass
