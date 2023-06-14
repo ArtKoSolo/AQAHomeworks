@@ -39,7 +39,7 @@ public class SecondTest extends BaseClass {
         Util.scrollToElementVisibilityOf (driver, coachesButton);
         driver.findElement (coachesButton).click ();
         List<WebElement> namesList = driver.findElements (coachList);
-        for (WebElement element : driver.findElements (coachList)) {
+        for (WebElement element : namesList) {
             System.out.println(element.findElement (names).getText ());
         }
     }
