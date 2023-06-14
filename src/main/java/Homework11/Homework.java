@@ -1,8 +1,7 @@
 package Homework11;
 
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Homework {
    public static void main(String[] args) {
@@ -20,3 +19,4 @@ public class Homework {
       }
    }
 }
+
