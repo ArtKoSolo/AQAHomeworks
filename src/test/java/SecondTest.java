@@ -34,13 +34,13 @@ public class SecondTest extends BaseClass {
 
 
     @Test
-    public void scrollingDownToTheElement(){
+    public void scrollingDownToTheElement() throws InterruptedException {
+        Thread.sleep (2000);
         Util.scrollToElementVisibilityOf (driver, coachesButton);
         driver.findElement (coachesButton).click ();
-        List<WebElement> namesList = new ArrayList<> ();
+        List<WebElement> namesList = driver.findElements (coachList);
         for (WebElement element : driver.findElements (coachList)) {
-//            namesList.add (element.findElement (names).getText ());
-        System.out.println(element.findElement (names).getText ());
+            System.out.println(element.findElement (names).getText ());
         }
     }
 
